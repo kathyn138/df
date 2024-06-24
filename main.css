@@ -76,3 +76,9 @@ span.nav-link-underline {
     animation: 0.5s linear 1.3s forwards unhide-nav;
   }
 }
+
+/* LANDING BODY */
+.landing-body {
+  background-image: url('/assets/bg-vid.png');
+  background-position-x: center;
+}
