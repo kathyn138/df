@@ -1,23 +1,23 @@
 @font-face {
-	font-family: Palmore;
-	src: url(https://static1.squarespace.com/static/64c2ab8b44c0312560249396/t/666a2f86176c011915b582c7/1718235014797/palmore-webfont.woff2);
+  font-family: Palmore;
+  src: url('./assets/palmore-webfont.woff');
 }
 @font-face {
-	font-family: Palmore Semibold;
-	src: url(https://static1.squarespace.com/static/64c2ab8b44c0312560249396/t/666c991694de7d0e08cd1975/1718393110480/palmoresemibold-webfont.woff);
+  font-family: Palmore Semibold;
+  src: url('./assets/palmoresemibold-webfont.woff');
 }
 
 body {
   font-family: 'Montserrat', sans-serif;
 }
 nav {
-  background-color: #1A2223;
-  color: #E3DAC9;
+  background-color: #1a2223;
+  color: #e3dac9;
 }
 .nav-link,
 .nav-link:active,
 .nav-link:visited {
-  color: #E3DAC9;
+  color: #e3dac9;
   font-size: 1.7em;
 }
 span.nav-link-underline {
@@ -29,17 +29,50 @@ span.nav-link-underline {
   visibility: hidden;
 }
 .nav-link:hover {
-  color: #E3DAC9;
+  color: #e3dac9;
 }
 .nav-link:hover > span.nav-link-underline {
   visibility: visible;
 }
+
+/* BRAND IN NAVBAR */
 .navbar-brand {
   font-family: 'Palmore';
-	font-size: 4em;
-  color: #E3DAC9;
+  font-size: 4em;
+  color: #e3dac9;
   padding: 0;
+  margin: 0;
+  position: relative;
+  top: -10px;
 }
 .navbar-brand:hover {
-  color: #E3DAC9;
+  color: #e3dac9;
+}
+@keyframes move-brand {
+  100% {
+    transform: translateX(-49vw);
+    /* opacity: 0; */
+  }
+}
+@media screen and (min-width: 800px) {
+  .brand {
+    position: absolute;
+    left: 50%;
+    animation: 0.5s linear 1s forwards move-brand;
+  }
+}
+
+/* NAVBAR */
+@keyframes unhide-nav {
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+@media screen and (min-width: 800px) {
+  .navbar-nav {
+    opacity: 0;
+    visibility: hidden;
+    animation: 0.5s linear 1.3s forwards unhide-nav;
+  }
 }
