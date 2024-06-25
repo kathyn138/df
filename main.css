@@ -10,6 +10,16 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+html,
+body,
+#root {
+  height: 100%;
+}
+h1 {
+  font-family: 'Palmore Semibold';
+  font-size: 500%;
+  letter-spacing: 1.5rem;
+}
 nav {
   background-color: #1a2223;
   color: #e3dac9;
@@ -18,7 +28,7 @@ nav {
 .nav-link:active,
 .nav-link:visited {
   color: #e3dac9;
-  font-size: 1.7em;
+  font-size: 1.7rem;
 }
 span.nav-link-underline {
   display: block;
@@ -38,7 +48,7 @@ span.nav-link-underline {
 /* BRAND IN NAVBAR */
 .navbar-brand {
   font-family: 'Palmore';
-  font-size: 4em;
+  font-size: 4rem;
   color: #e3dac9;
   padding: 0;
   margin: 0;
@@ -79,6 +89,20 @@ span.nav-link-underline {
 
 /* LANDING BODY */
 .landing-body {
-  background-image: url('/assets/bg-vid.png');
-  background-position-x: center;
+  padding: 0;
+}
+.demo-vid {
+  width: 100%;
+}
+
+/* FOOTER */
+.footer-container {
+  background-color: #E3DAC9;
+  color: #1A2223;
+}
+hr.bar {
+  border-top: 1px solid #1A2223;
+  /* width: 40%; */
+  margin: 0 auto;
+  opacity: 1;
 }
