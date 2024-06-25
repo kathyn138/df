@@ -14,11 +14,16 @@ html,
 body,
 #root {
   height: 100%;
+  color: #1A2223;
 }
 h1 {
   font-family: 'Palmore Semibold';
   font-size: 500%;
   letter-spacing: 1.5rem;
+}
+h3 {
+  font-family: 'Palmore Semibold';
+  font-size: 3.5rem;
 }
 nav {
   background-color: #1a2223;
@@ -102,7 +107,34 @@ span.nav-link-underline {
 }
 hr.bar {
   border-top: 1px solid #1A2223;
-  /* width: 40%; */
   margin: 0 auto;
   opacity: 1;
+}
+.social-icons a {
+  color: #1A2223;
+}
+.mail-icon, .instagram-icon {
+  font-size: 2rem;
+}
+.phone-icon {
+  font-size: 1.5rem;
+  margin-top: 5px;
+}
+.instagram-icon, .mail-icon {
+  margin-right: 40px;
+}
+
+/* NEWSLETTER IN FOOTER */
+.newsletter-form {
+  display: inline-block;
+  width: 40%;
+  border-radius: 0%;
+  background-color: #E3DAC9;
+  border: 1px solid #1A2223;
+}
+.newsletter-signup-btn {
+  /* display: inline; */
+  background-color: #1A2223;
+  color: #E3DAC9;
+  border-radius: 0%;
 }
