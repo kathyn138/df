@@ -73,7 +73,7 @@ span.nav-link-underline {
   .brand {
     position: absolute;
     left: 50%;
-    animation: 1s linear 3s forwards move-brand;
+    animation: 1s linear 4.5s forwards move-brand;
   }
 }
 
@@ -88,7 +88,7 @@ span.nav-link-underline {
   .navbar-nav {
     opacity: 0;
     visibility: hidden;
-    animation: 0.5s linear 3.6s forwards unhide-nav;
+    animation: 0.5s linear 5s forwards unhide-nav;
   }
 }
 
