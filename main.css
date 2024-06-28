@@ -29,6 +29,9 @@ nav {
   background-color: #1a2223;
   color: #e3dac9;
 }
+.navbar-nav {
+  width: 80%;
+}
 .nav-link,
 .nav-link:active,
 .nav-link:visited {
@@ -62,33 +65,89 @@ span.nav-link-underline {
 }
 .navbar-brand:hover {
   color: #e3dac9;
+  text-decoration: underline;
 }
-@keyframes move-brand {
+
+@keyframes rm-brand-rest {
   100% {
-    transform: translateX(-49vw);
-    /* opacity: 0; */
-  }
-}
-@media screen and (min-width: 800px) {
-  .brand {
-    position: absolute;
-    left: 50%;
-    animation: 1s linear 4.5s forwards move-brand;
+    opacity: 0;
+    visibility: none;
   }
 }
 
-/* NAVBAR */
 @keyframes unhide-nav {
   100% {
     opacity: 1;
     visibility: visible;
   }
 }
-@media screen and (min-width: 800px) {
+
+
+@media screen and (min-width: 992px) {
+  @keyframes move-brand {
+    100% {
+      transform: translateX(-49vw);
+    }
+  }
+
+  @keyframes move-last-initial {
+    100% {
+      transform: translateX(-40px);
+    }
+  }
+
+  .brand {
+    position: absolute;
+    left: 50%;
+    animation: 1s linear 4.5s forwards move-brand;
+  }
+
+  .brand-rest {
+    opacity: 1;
+    visibility: visible;
+    animation: .5s linear 3s forwards rm-brand-rest;
+  }
+
+  .brand-initial-last {
+    display: inline-block;
+    animation: 1s linear 3.4s forwards move-last-initial;
+  }
+
   .navbar-nav {
     opacity: 0;
     visibility: hidden;
     animation: 0.5s linear 5s forwards unhide-nav;
+  }
+
+  /* .brand-rest {
+    display: inline;
+    opacity: 1;
+  } */
+  /* add in brand  rest visible/ idk  */
+  #navbar {
+    flex-direction: row;
+  }
+
+  /* setTimeout(function () {
+    $('.brand-rest').animate({ opacity: 0 }, 3000);
+  }, 500); */
+}
+
+
+/* NAVBAR */
+
+
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .brand {
+    position: relative;
+    left: 0;
+  }
+  #navbar {
+    flex-direction: column;
+  }
+  .brand-rest {
+    animation: .5s linear 3s forwards rm-brand-rest
   }
 }
 
