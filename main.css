@@ -147,6 +147,10 @@ input.newsletter-form::placeholder {
   font-size: 1.9rem;
   text-align: center;
 }
+input.newsletter-form:focus {
+  border: 1px solid #E0693E;
+  box-shadow: 0 0 3px 1px #E0693E;
+}
 .newsletter-form {
   display: inline-block;
   width: 40%;
@@ -167,4 +171,14 @@ input.newsletter-form::placeholder {
   background-color: #1A2223;
   color: #E3DAC9;
   border-radius: 0%;
+}
+.newsletter-signup-btn:hover {
+  background-color: #1A2223;
+  color: #E0693E;
+}
+.newsletter-signup-btn:focus, .btn:focus:active {
+  background-color: #1A2223;
+  color: #E0693E;
+  border: 1px solid #E0693E;
+  box-shadow: 0 0 3px 1px #E0693E;
 }
