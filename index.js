@@ -1,19 +1,35 @@
 $(document).ready(function () {
   // NAVBAR ANIMATIONS
 
-    $(window).resize(function() {
-      console.log('he')
-      $('.navbar-nav').css({animation: 'none', opacity: 1,
-      visibility: 'visible'})})
+  $(window).resize(function () {
+    console.log('he');
+    $('.navbar-nav').css({
+      animation: 'none',
+      opacity: 1,
+      visibility: 'visible',
+    });
+    $('.brand').css({
+      animation: 'none'
+    });
+    $('.brand-rest').css({
+      animation: 'none',
+      display: 'none'
+    });
+    $('.brand-initial-last').css({
+      animation: 'none',
+      marginLeft: '-15px'
+    });
+  });
+  // WIP make the navbar brand stay wherever it is
 
   if ($(window).width() >= 992) {
-    console.log('here')
+    console.log('here');
     // $('.brand-rest').css({ opacity: 1 });
     // to remove rest of branding
     // setTimeout(function () {
     //   $('.brand-rest').animate({ opacity: 0 }, 3000);
     // }, 500);
-    
+
     // to shift last initial closer to first initial on left
     // setTimeout(function () {
     //   $('.brand-initial-last').animate({ marginLeft: '-40px' }, 1000);
@@ -41,5 +57,4 @@ $(document).ready(function () {
   player.on('ready', () => {
     player.mute();
   });
-
 });
