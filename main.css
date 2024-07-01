@@ -86,7 +86,7 @@ span.nav-link-underline {
 @media screen and (min-width: 992px) {
   @keyframes move-brand {
     100% {
-      transform: translateX(-49vw);
+      transform: translateX(-48.5vw);
     }
   }
 
@@ -119,11 +119,6 @@ span.nav-link-underline {
     animation: 0.5s linear 5s forwards unhide-nav;
   }
 
-  /* .brand-rest {
-    display: inline;
-    opacity: 1;
-  } */
-  /* add in brand  rest visible/ idk  */
   #navbar {
     flex-direction: row;
   }
@@ -131,6 +126,12 @@ span.nav-link-underline {
   /* setTimeout(function () {
     $('.brand-rest').animate({ opacity: 0 }, 3000);
   }, 500); */
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+  /* .brand {
+    left: 0%
+  } */
 }
 
 
