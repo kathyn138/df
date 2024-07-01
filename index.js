@@ -19,25 +19,24 @@ $(document).ready(function () {
       animation: 'none',
       marginLeft: '-15px'
     });
+
+    // DF on top left for desktops
+    if (window.matchMedia('(min-width: 992px)').matches) {
+      console.log('here');
+      $('.brand').css({left: '1%'});
+    }
+
+    // center DF for medium devices
+    if (window.matchMedia('(max-width: 992px) and (min-width: 768px)').matches) {
+      console.log('between')
+      $('.brand').css({left: '0%'});
+    }
   });
-  // WIP make the navbar brand stay wherever it is
 
-  if ($(window).width() >= 992) {
-    console.log('here');
-    // $('.brand-rest').css({ opacity: 1 });
-    // to remove rest of branding
-    // setTimeout(function () {
-    //   $('.brand-rest').animate({ opacity: 0 }, 3000);
-    // }, 500);
+  
 
-    // to shift last initial closer to first initial on left
-    // setTimeout(function () {
-    //   $('.brand-initial-last').animate({ marginLeft: '-40px' }, 1000);
-    // }, 3500);
-  }
-
-  if ($(window).width() < 992) {
-    console.log('wtf');
+  if ($(window).width < 992 && $(window).width() > 768) {
+    // $('.brand').css({left: '0%'});
     // $('#navbar').addClass('flex-column');
     // $('.brand').css({position: 'relative', left: 0});
     // setTimeout(function() {
