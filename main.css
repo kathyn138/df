@@ -82,7 +82,7 @@ span.nav-link-underline {
   }
 }
 
-
+/* large devices */
 @media screen and (min-width: 992px) {
   @keyframes move-brand {
     100% {
@@ -134,12 +134,19 @@ span.nav-link-underline {
   } */
 }
 
-
-/* NAVBAR */
-
-
-
+/* medium devices and landscaope phones */
 @media screen and (min-width: 576px) and (max-width: 991px) {
+  @keyframes move-first-initial {
+    100% {
+      transform: translateX(62px);
+    }
+  }
+  @keyframes move-last-initial {
+    100% {
+      transform: translateX(20px);
+    }
+  }
+
   .brand {
     position: relative;
     left: 0;
@@ -149,6 +156,14 @@ span.nav-link-underline {
   }
   .brand-rest {
     animation: .5s linear 3s forwards rm-brand-rest
+  }
+  .brand-initial-first {
+    display: inline-block;
+    animation: 1s linear 3.4s forwards move-first-initial;
+  }
+  .brand-initial-last {
+    display: inline-block;
+    animation: 1s linear 3.4s forwards move-last-initial;
   }
 }
 

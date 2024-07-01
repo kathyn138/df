@@ -19,6 +19,9 @@ $(document).ready(function () {
       animation: 'none',
       marginLeft: '-15px'
     });
+    $('.brand-initial-first').css({
+      animation: 'none'
+    });
 
     // DF on top left for desktops
     if (window.matchMedia('(min-width: 992px)').matches) {
