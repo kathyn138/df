@@ -41,26 +41,20 @@ $(document).ready(function () {
       );
     }
 
-    // DF on top left for desktops
+    // large devices
     if (window.matchMedia('(min-width: 992px)').matches) {
+      // DF on top left for desktops
       $('.brand').css({ left: '1%' });
-
-      // when DF move animation done
-      document.querySelector('.brand').addEventListener('animationend', (e) => {
-        if (e.target.className === 'brand') {
-          $('.brand-rest').css({ display: 'none' });
-          $('.brand-initial-last').css({ marginLeft: '25px' });
-        }
-      });
     }
 
     // medium devices
     if (
       window.matchMedia('(max-width: 992px) and (min-width: 768px)').matches
     ) {
-
       // center DF
-      $('.brand').css({ left: '0%' });
+      $('.brand').css({ left: '0%' })
+      $('.brand-rest').css({display: 'none'})
+
     }
 
     // mobile devices
@@ -81,6 +75,22 @@ $(document).ready(function () {
         .addClass('justify-content-center');
     }
   });
+
+
+  // OUTSIDE RESIZE
+    // large devices
+    if (window.matchMedia('(min-width: 992px)').matches) {
+
+
+    }
+
+    // medium devices
+    if (
+      window.matchMedia('(max-width: 992px) and (min-width: 768px)').matches
+    ) {
+     
+
+    }
 
   // mobile devices
   if (window.matchMedia('(max-width: 576px)').matches) {

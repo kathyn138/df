@@ -66,9 +66,8 @@ span.nav-link-underline {
   position: relative;
   top: -10px;
 }
-.navbar-brand:hover {
+.navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
   color: #e3dac9;
-  text-decoration: underline;
 }
 
 @keyframes rm-brand-rest {
@@ -131,11 +130,7 @@ span.nav-link-underline {
   }, 500); */
 }
 
-@media screen and (max-width: 992px) and (min-width: 768px){
-  /* .brand {
-    left: 0%
-  } */
-}
+
 
 /* medium devices and landscape phones */
 @keyframes move-first-initial {
