@@ -55,7 +55,9 @@ span.nav-link-underline {
 .navbar-toggler {
   display: none;
 }
-
+#navbar-close {
+  display: none;
+}
 /* BRAND IN NAVBAR */
 .navbar-brand {
   font-family: 'Palmore';
@@ -288,8 +290,9 @@ input.newsletter-form:focus {
     top: 30%;
     color: #e3dac9;
     font-size: 30px;
+    z-index: 2;
   }
-  .navbar-collapse show{
+  .navbar-collapse {
     z-index: 1;
     background-color: #1a2223;
     position: absolute;
