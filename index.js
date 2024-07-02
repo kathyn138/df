@@ -109,6 +109,7 @@ $(document).ready(function () {
     });
 
     $('#navbar-close').on('click touch', function() {
+      $('.navbar-mobile').css({display: 'none'})
       $('#navbar-close').css({display: 'none'});
       $('#navbar-open').css({display: 'inline'});
     });
