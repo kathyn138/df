@@ -2,7 +2,8 @@ $(document).ready(function () {
   // NAVBAR ANIMATIONS
 
   $(window).resize(function () {
-    console.log('he');
+    $('.navbar-mobile').css({display: 'none'})
+
     $('.navbar-nav').css({
       animation: 'none',
       opacity: 1,
@@ -100,27 +101,16 @@ $(document).ready(function () {
 
 
     $('#navbar-open').on('click', function() {
-      $('.navbar-nav').removeClass('nav-fill m-auto');
-      $('.navbar-nav').css({marginLeft: '30px', marginTop: '30%'});
-      $('.nav-link-underline').css({margin: '0'})
-      $('.nav-item').css({marginBottom: '10%'});
+      $('.navbar-mobile').css({display: 'block'})
+
       $('#navbar-open').css({display: 'none'});
       $('#navbar-close').css({display: 'inline'});
 
-      // rm extra white space
-      $('.footer-container').css({display: 'none'});
     });
 
     $('#navbar-close').on('click', function() {
-      $('.navbar-nav').addClass('nav-fill m-auto');
-      $('.navbar-nav').css({marginLeft: '0', marginTop: '0'});
-      $('.nav-link-underline').css({margin: 'auto'})
-      $('.nav-item').css({marginBottom: '0'});
       $('#navbar-close').css({display: 'none'});
       $('#navbar-open').css({display: 'inline'});
-
-      // rm extra white space
-      $('.footer-container').css({display: 'block'});
     });
 
 
