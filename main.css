@@ -264,9 +264,6 @@ input.newsletter-form:focus {
 
 /* portrait mobile devices */
 @media screen and (max-width: 576px) {
-  /* nav {
-    height: 30vh;
-  } */
   .brand {
     position: relative;
     left: 0;
@@ -302,11 +299,8 @@ input.newsletter-form:focus {
     height: 100vh;
     overflow-y: hidden;
   }
-  h1 {
-    display: none;
-  }
   .landing-row  {
-    height: 50%;
+    height: 50vh;
   }
   iframe {
     position: absolute;
@@ -315,8 +309,18 @@ input.newsletter-form:focus {
     width: 220%;
     height: 100%;
   }
-}
-#pain {
-  position: relative;
-  z-index: 1;
+
+  /* footer */
+  .footer-container {
+    background-color: #EBEFE7;
+    height: 50vh;
+  }
+  h1 {
+    font-size: 250%;
+    letter-spacing: 0rem;
+    margin-bottom: 0;
+  }
+  hr, .footer-brand {
+    display: none;
+  }
 }
