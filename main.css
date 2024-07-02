@@ -9,6 +9,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
 }
 html,
 body,
@@ -63,7 +64,6 @@ span.nav-link-underline {
   position: relative;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
   margin-left: 50px;
   margin-top: 30%;
 }

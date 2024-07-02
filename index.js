@@ -95,9 +95,12 @@ $(document).ready(function () {
 
   // mobile devices
   if (window.matchMedia('(max-width: 576px)').matches) {
-    $('.navbar-nav').wrap(
-      '<div class="collapse navbar-collapse" id="navbarSupportedContent"></div>'
+    $('.navbar-default').wrap(
+      '<div class="collapse navbar-collapse"></div>'
     );
+    $('.navbar-mobile').wrap(
+      '<div class="collapse navbar-collapse" id="navbarSupportedContent"></div>'
+    )
 
 
     $('#navbar-open').on('click touch', function() {
@@ -109,7 +112,7 @@ $(document).ready(function () {
     });
 
     $('#navbar-close').on('click touch', function() {
-      $('.navbar-mobile').css({display: 'none'})
+      // $('.navbar-mobile').css({display: 'none'})
       $('#navbar-close').css({display: 'none'});
       $('#navbar-open').css({display: 'inline'});
     });
