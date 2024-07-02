@@ -220,6 +220,9 @@ hr.bar {
 }
 
 /* NEWSLETTER IN FOOTER */
+.newsletter-container {
+  width: 50%;
+}
 input.newsletter-form::placeholder {
   font-family: 'Palmore';
   color: #1A2223;
@@ -232,7 +235,7 @@ input.newsletter-form:focus {
 }
 .newsletter-form {
   display: inline-block;
-  width: 40%;
+  width: 75%;
   border-radius: 0%;
   background-color: #E3DAC9;
   border: 1px solid #1A2223;
@@ -314,6 +317,9 @@ input.newsletter-form:focus {
   .footer-container {
     background-color: #EBEFE7;
     height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center
   }
   h1 {
     font-size: 250%;
@@ -322,5 +328,16 @@ input.newsletter-form:focus {
   }
   hr, .footer-brand {
     display: none;
+  }
+  .footer-msg-container {
+    align-items: flex-end;
+    height: 35%;
+  }
+  .newsletter-container {
+    width: 91.66666667%;
+    margin-top: .5rem
+  }
+  .newsletter-form {
+    width: 70%;
   }
 }
