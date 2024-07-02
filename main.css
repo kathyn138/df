@@ -39,19 +39,12 @@ nav {
   color: #e3dac9;
   font-size: 1.7rem;
 }
-span.nav-link-underline {
-  display: block;
-  padding-bottom: 3px;
-  border-bottom: 1px solid;
-  width: 50%;
-  margin: 0 auto;
-  visibility: hidden;
-}
 .nav-link:hover {
-  color: #e3dac9;
+  color: #E0693E;
 }
-.nav-link:hover > span.nav-link-underline {
-  visibility: visible;
+.nav-link:focus {
+  color: #E0693E;
+  font-weight: 600;
 }
 .navbar-toggler {
   display: none;
@@ -66,9 +59,6 @@ span.nav-link-underline {
   height: 100vh;
   margin-left: 50px;
   margin-top: 30%;
-}
-.navbar-mobile .nav-link-underline{
-  margin: 0;
 }
 .navbar-mobile .nav-item {
   margin-bottom: 10%;
@@ -85,8 +75,11 @@ span.nav-link-underline {
   position: relative;
   top: -10px;
 }
-.navbar-brand:hover, .navbar-brand:active, .navbar-brand:focus {
-  color: #e3dac9;
+.navbar-brand:hover, .navbar-brand:focus {
+  color: #E0693E;
+}
+.navbar-brand:focus {
+  font-weight: 600;
 }
 
 @keyframes rm-brand-rest {
@@ -231,6 +224,9 @@ hr.bar {
 }
 .instagram-icon, .mail-icon {
   margin-right: 40px;
+}
+.mail-icon:hover, .instagram-icon:hover, .phone-icon:hover {
+  color: #E0693E;
 }
 
 /* NEWSLETTER IN FOOTER */
