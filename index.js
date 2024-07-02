@@ -32,15 +32,15 @@ $(document).ready(function () {
     }
 
     // if not mobile view, use desktop version of video
-    if (
-      $('#promo').attr('src') !==
-      'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
-    ) {
-      $('#promo').attr(
-        'src',
-        'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
-      );
-    }
+    // if (
+    //   $('#promo').attr('src') !==
+    //   'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
+    // ) {
+    //   $('#promo').attr(
+    //     'src',
+    //     'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
+    //   );
+    // }
 
     // large devices
     if (window.matchMedia('(min-width: 992px)').matches) {
