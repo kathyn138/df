@@ -100,7 +100,7 @@ $(document).ready(function () {
     );
 
 
-    $('#navbar-open').on('click', function() {
+    $('#navbar-open').on('click touch', function() {
       $('.navbar-mobile').css({display: 'block'})
 
       $('#navbar-open').css({display: 'none'});
@@ -108,7 +108,7 @@ $(document).ready(function () {
 
     });
 
-    $('#navbar-close').on('click', function() {
+    $('#navbar-close').on('click touch', function() {
       $('#navbar-close').css({display: 'none'});
       $('#navbar-open').css({display: 'inline'});
     });
