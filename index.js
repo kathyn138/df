@@ -116,10 +116,10 @@ $(document).ready(function () {
 
     // switch video player for mobile device
     // allows volume button to appear
-    $('#promo').attr(
-      'src',
-      'https://iframe.mediadelivery.net/embed/263606/5e2e3857-2aff-4f4e-8689-8ad384b028de?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
-    );
+    // $('#promo').attr(
+    //   'src',
+    //   'https://iframe.mediadelivery.net/embed/263606/5e2e3857-2aff-4f4e-8689-8ad384b028de?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
+    // );
 
     $('.social-icons')
       .removeClass('justify-content-end mt-3')
