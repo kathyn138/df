@@ -31,7 +31,10 @@ $(document).ready(function () {
     }
 
     // if not mobile view, use desktop version of video
-    if ($('#promo').attr('src') !== 'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true') {
+    if (
+      $('#promo').attr('src') !==
+      'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
+    ) {
       $('#promo').attr(
         'src',
         'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
@@ -40,17 +43,27 @@ $(document).ready(function () {
 
     // DF on top left for desktops
     if (window.matchMedia('(min-width: 992px)').matches) {
-      console.log('here');
       $('.brand').css({ left: '1%' });
+
+      // when DF move animation done
+      document.querySelector('.brand').addEventListener('animationend', (e) => {
+        if (e.target.className === 'brand') {
+          $('.brand-rest').css({ display: 'none' });
+          $('.brand-initial-last').css({ marginLeft: '25px' });
+        }
+      });
     }
 
-    // center DF for medium devices
+    // medium devices
     if (
       window.matchMedia('(max-width: 992px) and (min-width: 768px)').matches
     ) {
+
+      // center DF
       $('.brand').css({ left: '0%' });
     }
 
+    // mobile devices
     if (window.matchMedia('(max-width: 576px)').matches) {
       $('.navbar-nav').wrap(
         '<div class="collapse navbar-collapse" id="navbarSupportedContent"></div>'
@@ -63,7 +76,9 @@ $(document).ready(function () {
         'https://iframe.mediadelivery.net/embed/263606/5e2e3857-2aff-4f4e-8689-8ad384b028de?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
       );
 
-      $('.social-icons').removeClass('justify-content-end').addClass('justify-content-center');
+      $('.social-icons')
+        .removeClass('justify-content-end')
+        .addClass('justify-content-center');
     }
   });
 
@@ -80,7 +95,9 @@ $(document).ready(function () {
       'https://iframe.mediadelivery.net/embed/263606/5e2e3857-2aff-4f4e-8689-8ad384b028de?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
     );
 
-    $('.social-icons').removeClass('justify-content-end mt-3').addClass('justify-content-center');
+    $('.social-icons')
+      .removeClass('justify-content-end mt-3')
+      .addClass('justify-content-center');
   }
 
   const player = new playerjs.Player(document.getElementById('promo'));
