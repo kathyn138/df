@@ -1,3 +1,12 @@
 .lately-body {
   height: 90vh;
+  overflow: hidden;
+  padding: 0;
 }
+.lately-body {
+  background-image: url('./assets/lately-bg.png');
+  background-position: center bottom;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+/* TODO: media queries for bg */
