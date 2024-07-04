@@ -1,5 +1,8 @@
+html, body {
+  height: 100%;
+}
 .lately-body {
-  height: 90vh;
+  height: 90%;
   overflow: hidden;
   padding: 0;
 }
@@ -19,3 +22,44 @@
     background-position: 60% bottom;
   }
 }
+
+h1.film-title {
+  color: #E3DAC9;
+  letter-spacing: 0;
+  font-size: 10rem;
+  position: absolute;
+  z-index: 1;
+}
+.carousel-row {
+  margin-top: 6.45rem;
+}
+.slideshow {
+  height: 30rem;
+}
+.carousel.slide {
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+}
+.carousel-item {
+  height: 100%;
+}
+.carousel-inner img {
+  position: relative;
+  top: -150px;
+}
+.lately-details-container {
+  color: #E3DAC9;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.lately-details-container span {
+  display: block;
+}
+h2 {
+  font-family: 'Palmore';
+  font-size: 5rem;
+}
+/* TODO: write media query for in between for bg, gap rn */
+/* TODO: write media query for slideshow img */
