@@ -105,4 +105,12 @@ h2 {
   .lately-details-container {
     color: #1A2223;
   }
+  .lately-details-container {
+    font-size: 1.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+    width: 80%;
+    text-align: center;
+  }
 }
