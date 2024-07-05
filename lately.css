@@ -47,6 +47,10 @@ h1.film-title {
 }
 .carousel-inner img {
   position: relative;
+  top: -30px;
+  width: 100%;
+}
+#lately-1, #lately-12 {
   top: -150px;
 }
 .lately-details-container {
