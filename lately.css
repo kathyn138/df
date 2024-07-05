@@ -53,6 +53,7 @@ h1.film-title {
   color: #EBEFE7;
   font-size: 2rem;
   font-weight: 300;
+  margin-top: 16px;
 }
 .lately-details-container span {
   display: block;
@@ -61,5 +62,36 @@ h2 {
   font-family: 'Palmore';
   font-size: 5rem;
 }
-/* TODO: write media query for in between for bg, gap rn */
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .carousel-inner img {
+    width: 150%;
+    right: 30%;
+    bottom: 50%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .carousel-inner img {
+    width: 170%;
+    right: 40%;
+    bottom: 40%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  .carousel-inner img {
+    width: 180%;
+    right: 40%;
+    bottom: 20%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .carousel-inner img {
+    width: 200%;
+    right: 70%;
+    bottom: 0%;
+  }
+  .lately-details-container {
+    color: #1A2223;
+  }
+}
+
 /* TODO: write media query for slideshow img */
