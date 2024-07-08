@@ -28,7 +28,7 @@ html, body {
   }
 }
 
-h1.film-title {
+h2.film-title {
   font-family: 'Palmore';
   color: #E3DAC9;
   letter-spacing: 0;
@@ -63,6 +63,7 @@ h1.film-title {
 #lately-1, #lately-12 {
   top: -150px;
 }
+
 .lately-details-container {
   color: #EBEFE7;
   font-size: 2rem;
@@ -95,9 +96,12 @@ h2 {
   }
 }
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  h1.film-title {
+  #lately-1 {
+    top: -110px;
+  }
+  h2.film-title {
     font-size: 9rem;
-    top: 294px;
+    top: 123px;
   }
   .carousel-inner img {
     width: 180%;
@@ -106,9 +110,15 @@ h2 {
   }
 }
 @media screen and (max-width: 576px) {
-  h1.film-title {
-    font-size: 7rem;
-    top: 313px;
+  .slideshow {
+    height: 100%;
+  }
+  #lately-1 {
+    top: 0px;
+  }
+  h2.film-title {
+    font-size: 6rem;
+    top: 153px;
   }
   .carousel-inner img {
     width: 200%;
@@ -121,7 +131,7 @@ h2 {
   .lately-details-container {
     font-size: 1.5rem;
   }
-  h2 {
+  h2.release-date {
     font-size: 3rem;
     width: 80%;
     text-align: center;
