@@ -60,9 +60,12 @@ $(document).ready(function () {
 
     // mobile devices
     if (window.matchMedia('(max-width: 576px)').matches) {
-      $('.navbar-nav').wrap(
-        '<div class="collapse navbar-collapse" id="navbarSupportedContent"></div>'
+      $('.navbar-default').wrap(
+        '<div class="collapse navbar-collapse"></div>'
       );
+      $('.navbar-mobile').wrap(
+        '<div class="collapse navbar-collapse" id="navbarSupportedContent"></div>'
+      )
 
       // switch video player for mobile device
       // allows volume button to appear
