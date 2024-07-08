@@ -113,7 +113,7 @@ h2 {
   .slideshow {
     height: 100%;
   }
-  #lately-1 {
+  #lately-1, #lately-12  {
     top: 0px;
   }
   h2.film-title {
