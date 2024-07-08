@@ -318,7 +318,6 @@ input.newsletter-form:focus {
   /* footer */
   .footer-container {
     background-color: #ebefe7;
-    height: 25vh;
     display: flex;
     align-items: center;
   }
