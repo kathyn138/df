@@ -285,17 +285,6 @@ input.newsletter-form:focus {
   #navbar {
     flex-direction: column;
   }
-  .brand-rest {
-    animation: 0.5s linear 3s forwards rm-brand-rest;
-  }
-  .brand-initial-first {
-    display: inline-block;
-    animation: 1s linear 3.4s forwards move-first-initial;
-  }
-  .brand-initial-last {
-    display: inline-block;
-    animation: 1s linear 3.4s forwards med-move-last-initial;
-  }
   .navbar-toggler {
     display: inline-block;
     background: #1a2223;
