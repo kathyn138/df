@@ -14,7 +14,7 @@ body {
 html,
 body,
 #root {
-  height: 100%;
+  height: fit-content;
   color: #1a2223;
 }
 h1 {
@@ -318,9 +318,8 @@ input.newsletter-form:focus {
   /* footer */
   .footer-container {
     background-color: #ebefe7;
-    height: 50vh;
+    height: 25vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
   }
   h1 {
