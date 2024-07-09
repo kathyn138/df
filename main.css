@@ -259,12 +259,12 @@ input.newsletter-form:focus {
   margin-left: 5px;
   margin-top: 2px;
 }
-.newsletter-signup-btn {
+.newsletter-signup-btn, .create-submit-btn {
   background-color: #1a2223;
   color: #e3dac9;
   border-radius: 0%;
 }
-.newsletter-signup-btn:hover {
+.newsletter-signup-btn:hover, .create-submit-btn:hover {
   background-color: #1a2223;
   color: #e0693e;
 }

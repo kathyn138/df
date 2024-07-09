@@ -1,0 +1,59 @@
+.create-body {
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.create-form-row {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 80%;
+}
+.create-form-col {
+  display: flex;
+  justify-content: flex-end;
+}
+.create-form {
+  width: 50%;
+}
+.create-input-msg-container {
+  height: 70%;
+}
+#create-msg-input {
+  height: 100%;
+  padding-top: 10px;
+}
+#create-name-input, #create-contact-input, #create-msg-input {
+  background-color: #E3DAC9;
+  border-color: #E3DAC9;
+  border-radius: 0;
+}
+#create-name-input:focus, #create-contact-input:focus, #create-msg-input:focus {
+  border: 1px solid #e0693e;
+  box-shadow: 0 0 3px 1px #e0693e;
+  background-color: #ffff;
+}
+#create-name-input::placeholder, #create-contact-input::placeholder, #create-msg-input::placeholder {
+  color: #1a2223;
+  font-size: 1.5rem;
+}
+#create-name-input::placeholder, #create-contact-input::placeholder {
+  transform: translateY(3px);
+}
+#create-msg-input::placeholder {
+  transform: translateY(-6px);
+}
+.create-submit-btn {
+  float: inline-end;
+  width: 30%;
+}
+.create-msg-row {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+h2.create-msg {
+  font-family: 'Palmore';
+  color: #E3DAC9;
+  font-size: 4rem;
+}
