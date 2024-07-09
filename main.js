@@ -28,6 +28,10 @@ $(document).ready(function () {
         .addClass('justify-content-center');
 
       navBarCollapse();
+
+      $('.navbar-brand').html('DEL FICO');
+    } else {
+      $('.navbar-brand').html('DF');
     }
   });
 
@@ -38,5 +42,9 @@ $(document).ready(function () {
       .addClass('justify-content-center');
 
     navBarCollapse();
+
+    $('.navbar-brand').html('DEL FICO');
+  }  else {
+    $('.navbar-brand').html('DF');
   }
 });
