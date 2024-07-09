@@ -188,7 +188,7 @@ nav {
   height: 100%;
   overflow: hidden;
 }
-iframe {
+#promo-video {
   position: absolute;
   top: 0;
   left: -6%;

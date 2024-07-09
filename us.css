@@ -1,0 +1,65 @@
+.bio-container {
+  margin: 5rem;
+  font-size: 1.7rem;
+  font-weight: 300;
+  color: #000000;
+  padding: 0;
+}
+.bio-paragraph {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+#us-video-container {
+  display: flex;
+}
+#us-video {
+  pointer-events: none;
+  width: 100%;
+  height: 50%;
+}
+h2.team-header, h2.collab-header { 
+  font-family: 'Palmore';
+  color: #000000;
+  font-size: 5rem;
+}
+table {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.table {
+  width: 95%;
+  margin-bottom: 3rem;
+}
+tr {
+  border-color: #000000;
+}
+.last-collab-row {
+  border: none;
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .bio-container {
+    font-size: 1.4rem;
+  }
+  h2.team-header, h2.collab-header { 
+    font-size: 4.5rem;
+  }
+  table {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  #us-video-container {
+    display: none;
+  }
+  .bio-container {
+    font-size: 1.4rem;
+  }
+  h2.team-header, h2.collab-header { 
+    font-size: 4rem;
+  }
+  table {
+    font-size: 1rem;
+  }
+}
