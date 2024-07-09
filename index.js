@@ -2,7 +2,8 @@ $(document).ready(function () {
   // NAVBAR ANIMATIONS
 
   $(window).resize(function () {
-    $('.navbar-mobile').css({display: 'none'})
+    $('.navbar-mobile').css({ display: 'none' });
+    
 
     $('.navbar-nav').css({
       animation: 'none',
@@ -53,19 +54,19 @@ $(document).ready(function () {
       window.matchMedia('(max-width: 992px) and (min-width: 768px)').matches
     ) {
       // center DF
-      $('.brand').css({ left: '0%' })
-      $('.brand-rest').css({display: 'none'})
-
+      $('.brand').css({ left: '0%' });
+      $('.brand-rest').css({ display: 'none' });
     }
 
     // mobile devices
     if (window.matchMedia('(max-width: 576px)').matches) {
-      $('.navbar-default').wrap(
-        '<div class="collapse navbar-collapse"></div>'
-      );
+      $('#navbar-close').css({ display: 'none' });
+      $('#navbar-open').css({ display: 'inline' });
+      
+      $('.navbar-default').wrap('<div class="collapse navbar-collapse"></div>');
       $('.navbar-mobile').wrap(
         '<div class="collapse navbar-collapse" id="navbarSupportedContent"></div>'
-      )
+      );
 
       // switch video player for mobile device
       // allows volume button to appear
@@ -80,46 +81,34 @@ $(document).ready(function () {
     }
   });
 
-
   // OUTSIDE RESIZE
-    // large devices
-    if (window.matchMedia('(min-width: 992px)').matches) {
+  // large devices
+  if (window.matchMedia('(min-width: 992px)').matches) {
+  }
 
-
-    }
-
-    // medium devices
-    if (
-      window.matchMedia('(max-width: 992px) and (min-width: 768px)').matches
-    ) {
-     
-
-    }
+  // medium devices
+  if (window.matchMedia('(max-width: 992px) and (min-width: 768px)').matches) {
+  }
 
   // mobile devices
   if (window.matchMedia('(max-width: 576px)').matches) {
-    $('.navbar-default').wrap(
-      '<div class="collapse navbar-collapse"></div>'
-    );
+    $('.navbar-default').wrap('<div class="collapse navbar-collapse"></div>');
     $('.navbar-mobile').wrap(
       '<div class="collapse navbar-collapse" id="navbarSupportedContent"></div>'
-    )
+    );
 
+    $('#navbar-open').on('click touch', function () {
+      $('.navbar-mobile').css({ display: 'block' });
 
-    $('#navbar-open').on('click touch', function() {
-      $('.navbar-mobile').css({display: 'block'})
-
-      $('#navbar-open').css({display: 'none'});
-      $('#navbar-close').css({display: 'inline'});
-
+      $('#navbar-open').css({ display: 'none' });
+      $('#navbar-close').css({ display: 'inline' });
     });
 
-    $('#navbar-close').on('click touch', function() {
+    $('#navbar-close').on('click touch', function () {
       // $('.navbar-mobile').css({display: 'none'})
-      $('#navbar-close').css({display: 'none'});
-      $('#navbar-open').css({display: 'inline'});
+      $('#navbar-close').css({ display: 'none' });
+      $('#navbar-open').css({ display: 'inline' });
     });
-
 
     // switch video player for mobile device
     // allows volume button to appear

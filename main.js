@@ -2,6 +2,9 @@ $(document).ready(function () {
   // NAVBAR ANIMATIONS
 
   function navBarCollapse() {
+    $('#navbar-close').css({ display: 'none' });
+    $('#navbar-open').css({ display: 'inline' });
+
     $('.navbar-default').wrap('<div class="collapse navbar-collapse"></div>');
     $('.navbar-mobile').wrap(
       '<div class="collapse navbar-collapse" id="navbarSupportedContent"></div>'
@@ -21,6 +24,8 @@ $(document).ready(function () {
   }
 
   $(window).resize(function () {
+    $('.navbar-mobile').css({ display: 'none' });
+    
     // if uncollapsed parent navbar is there then remove
     // otherwise will be present after going from
     // collapsed viewport to non collapsed viewport
