@@ -21,6 +21,13 @@ $(document).ready(function () {
   }
 
   $(window).resize(function () {
+    // if uncollapsed parent navbar is there then remove
+    // otherwise will be present after going from
+    // collapsed viewport to non collapsed viewport
+    if ($('#navbarSupportedContent').length) {
+      $('.navbar-nav').unwrap();
+    }
+
     // mobile devices
     if (window.matchMedia('(max-width: 576px)').matches) {
       $('.social-icons')
@@ -44,7 +51,7 @@ $(document).ready(function () {
     navBarCollapse();
 
     $('.navbar-brand').html('DEL FICO');
-  }  else {
+  } else {
     $('.navbar-brand').html('DF');
   }
 });
