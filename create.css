@@ -14,7 +14,8 @@
   justify-content: flex-end;
 }
 .create-form {
-  width: 50%;
+  width: 40%;
+  margin-right: 5%;
 }
 .create-input-msg-container {
   height: 70%;
@@ -56,4 +57,5 @@ h2.create-msg {
   font-family: 'Palmore';
   color: #E3DAC9;
   font-size: 4rem;
+  margin-bottom: 4%;
 }
