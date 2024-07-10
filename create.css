@@ -2,6 +2,11 @@
   position: relative;
   padding-left: 0px;
   padding-right: 0px;
+  overflow: hidden;
+}
+.create-video-container {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .create-form-row {
   position: absolute;
@@ -24,21 +29,28 @@
   height: 100%;
   padding-top: 10px;
 }
-#create-name-input, #create-contact-input, #create-msg-input {
-  background-color: #E3DAC9;
-  border-color: #E3DAC9;
+#create-name-input,
+#create-contact-input,
+#create-msg-input {
+  background-color: #e3dac9;
+  border-color: #e3dac9;
   border-radius: 0;
 }
-#create-name-input:focus, #create-contact-input:focus, #create-msg-input:focus {
+#create-name-input:focus,
+#create-contact-input:focus,
+#create-msg-input:focus {
   border: 1px solid #e0693e;
   box-shadow: 0 0 3px 1px #e0693e;
   background-color: #ffff;
 }
-#create-name-input::placeholder, #create-contact-input::placeholder, #create-msg-input::placeholder {
+#create-name-input::placeholder,
+#create-contact-input::placeholder,
+#create-msg-input::placeholder {
   color: #1a2223;
   font-size: 1.5rem;
 }
-#create-name-input::placeholder, #create-contact-input::placeholder {
+#create-name-input::placeholder,
+#create-contact-input::placeholder {
   transform: translateY(3px);
 }
 #create-msg-input::placeholder {
@@ -46,7 +58,7 @@
 }
 .create-submit-btn {
   float: inline-end;
-  width: 30%;
+  width: 40%;
 }
 .create-msg-row {
   position: absolute;
@@ -55,7 +67,37 @@
 }
 h2.create-msg {
   font-family: 'Palmore';
-  color: #E3DAC9;
+  color: #e3dac9;
   font-size: 4rem;
   margin-bottom: 4%;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  h2.create-msg {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  h2.create-msg {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .create-body {
+    background-color: #000000;
+  }
+  #create-video {
+    display: none;
+  }
+  .create-form-row {
+    position: relative;
+  }
+  .create-msg-row {
+    position: relative;
+  }
+  .create-input-msg-container {
+    height: 250px;
+  }
 }
