@@ -94,10 +94,29 @@ h2.create-msg {
   .create-form-row {
     position: relative;
   }
+  .create-form-col {
+    justify-content: center;
+  }
+  .create-form {
+    width: 70%;
+    margin-right: 0;
+    margin-top: 10%;
+    margin-bottom: 8%;
+  }
   .create-msg-row {
     position: relative;
   }
   .create-input-msg-container {
     height: 250px;
+  }
+  #create-name-input::placeholder,
+  #create-contact-input::placeholder,
+  #create-msg-input::placeholder {
+    text-align: center;
+  }
+  h2.create-msg {
+    font-size: 3rem;
+    margin-left: 15%;
+    margin-right: 15%;
   }
 }
