@@ -307,7 +307,7 @@ input.newsletter-form:focus {
   .landing-row {
     height: 50vh;
   }
-  iframe {
+  #promo-video {
     position: absolute;
     top: 0;
     left: -59%;
