@@ -119,6 +119,12 @@ h2 {
   h2.film-title {
     font-size: 5rem;
     top: 164px;
+    opacity: 1;
+    animation: none;
+  }
+  .carousel-row {
+    opacity: 1;
+    animation: none;
   }
   .carousel-inner img {
     width: 200%;
@@ -126,7 +132,9 @@ h2 {
     bottom: 0%;
   }
   .lately-details-container {
-    color: #1A2223;
+    color: #FFFFFF;
+    opacity: 1;
+    animation: none;
   }
   .lately-details-container {
     font-size: 1rem;
