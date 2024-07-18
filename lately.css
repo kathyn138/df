@@ -116,6 +116,30 @@ h2 {
   #lately-1, #lately-12  {
     top: 0px;
   }
+  #lately-2 {
+    right: 65%;
+  }
+  #lately-3 {
+    right: 10%;
+  }
+  #lately-4 {
+    right: 60%;
+  }
+  #lately-5 {
+    right: 40%;
+  }
+  #lately-7 {
+    right: 100%;
+  }
+  #lately-8 {
+    right: 45%;
+  }
+  #lately-10 {
+    right: 17%;
+  }
+  #lately-12 {
+    right: 45%;
+  }
   h2.film-title {
     font-size: 5rem;
     top: 164px;
