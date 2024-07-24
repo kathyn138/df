@@ -34,10 +34,11 @@ $(document).ready(function () {
 
     // if not mobile view, use desktop version of video
     if (
-      $('#promo').attr('src') !==
-      'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
+      $('#promo-video').attr('src') !==
+      'https://iframe.mediadelivery.net/embed/261546/5e2e3857-2aff-4f4e-8689-8ad384b028de?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
     ) {
-      $('#promo').attr(
+      console.log('here in if')
+      $('#promo-video').attr(
         'src',
         'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
       );
@@ -70,7 +71,7 @@ $(document).ready(function () {
 
       // switch video player for mobile device
       // allows volume button to appear
-      $('#promo').attr(
+      $('#promo-video').attr(
         'src',
         'https://iframe.mediadelivery.net/embed/263606/5e2e3857-2aff-4f4e-8689-8ad384b028de?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
       );
@@ -112,7 +113,7 @@ $(document).ready(function () {
 
     // switch video player for mobile device
     // allows volume button to appear
-    $('#promo').attr(
+    $('#promo-video').attr(
       'src',
       'https://iframe.mediadelivery.net/embed/263606/5e2e3857-2aff-4f4e-8689-8ad384b028de?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
     );
