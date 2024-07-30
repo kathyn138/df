@@ -252,6 +252,11 @@ input.newsletter-form:focus {
 
 /* portrait mobile devices */
 @media screen and (max-width: 576px) {
+  /* to enable full width */
+  .fluid-engine {
+    display: block !important;
+  }
+  
   .brand {
     position: relative;
     left: 0;
