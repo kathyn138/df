@@ -4,12 +4,6 @@
   padding-right: 0px;
   overflow: hidden;
 }
-.create-video-container {
-  /* position: relative; */
-  /* padding-bottom: 56.25%;
-  height: 100%;
-  overflow: hidden; */
-}
 #create-video {
   position: absolute;
   top: 0;
@@ -22,7 +16,6 @@
 @keyframes fade-in {
   100% {
     opacity: 1;
-    /* visibility: visible; */
   }
 }
 .create-content-container {
@@ -91,8 +84,6 @@
   margin-top: 1%;
   opacity: 0;
   animation: 5s linear 1s forwards fade-in;
-  /* bottom: 0px;
-  width: 100%; */
 }
 h2.create-msg {
   font-family: 'Palmore';
