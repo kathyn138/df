@@ -134,6 +134,10 @@ nav {
 }
 
 @media screen and (min-width: 576px) and (max-width: 991px) {
+  /* to enable full width */
+  .fluid-engine {
+    display: block !important;
+  }
   .brand-landing {
     position: relative;
     left: 0;
@@ -256,7 +260,7 @@ input.newsletter-form:focus {
   .fluid-engine {
     display: block !important;
   }
-  
+
   .brand {
     position: relative;
     left: 0;
