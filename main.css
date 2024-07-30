@@ -136,10 +136,6 @@ nav {
   #navbar {
     flex-direction: row;
   }
-
-  /* setTimeout(function () {
-    $('.brand-rest').animate({ opacity: 0 }, 3000);
-  }, 500); */
 }
 
 /* medium devices and landscape phones */
@@ -195,7 +191,6 @@ nav {
   width: 110%;
   height: 100%;
   border: 0;
-  /* pointer-events: none; */
 }
 
 /* FOOTER */
@@ -299,8 +294,6 @@ input.newsletter-form:focus {
     z-index: 2;
     background-color: #1a2223;
     position: absolute;
-    /* width: 100%;
-    height: 100vh; */
     overflow-y: hidden;
   }
 

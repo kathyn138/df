@@ -3,7 +3,6 @@ $(document).ready(function () {
 
   $(window).resize(function () {
     $('.navbar-mobile').css({ display: 'none' });
-    
 
     $('.navbar-nav').css({
       animation: 'none',
@@ -37,7 +36,6 @@ $(document).ready(function () {
       $('#promo-video').attr('src') !==
       'https://iframe.mediadelivery.net/embed/261546/5e2e3857-2aff-4f4e-8689-8ad384b028de?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
     ) {
-      console.log('here in if')
       $('#promo-video').attr(
         'src',
         'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
