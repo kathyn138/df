@@ -8,6 +8,10 @@ h3 {
   font-family: 'Palmore Semibold';
   font-size: 3.5rem;
 }
+/* to enable full width */
+.fluid-engine {
+  display: block !important;
+}
 
 /* NAV */
 nav {
