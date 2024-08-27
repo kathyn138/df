@@ -21,8 +21,14 @@
 .create-content-container {
   position: relative;
   top: 0px;
-  width: 100%;
   min-height: 100%;
+}
+.create-submission-msg {
+  visibility: hidden;
+  position: relative;
+  top: 40%;
+  color: #e3dac9;
+  background-color: #1a2223;
 }
 .create-form-row {
   position: relative;

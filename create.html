@@ -84,15 +84,16 @@
           <!-- create form -->
           <div class="row create-form-row mx-auto">
             <div class="col create-form-col my-auto">
-              <form class="create-form">
+              <form class="create-form gform" id="create-form" method="POST" action="https://script.google.com/macros/s/AKfycbyPOCybg_1rKCxj5C9jyrcHnT0VEIeAB-X89NDy2uy8-HledodefkABx9aecfiFQe-R5w/exec">
+                <p class="create-submission-msg text-center">Thanks for reaching out! We'll get back to you soon!</p>
                 <div class="mb-5">
-                  <input type="text" class="form-control" id="create-name-input" placeholder="Name">
+                  <input type="text" name="name" class="form-control" id="create-name-input" placeholder="Name">
                 </div>
                 <div class="mb-5">
-                  <input type="text" class="form-control" id="create-contact-input" placeholder="Contact Info">
+                  <input type="text" name="contact-info" class="form-control" id="create-contact-input" placeholder="Contact Info">
                 </div>
                 <div class="mb-5 create-input-msg-container">
-                  <textarea type="text" class="form-control" id="create-msg-input" placeholder="Message"></textarea>
+                  <textarea type="text" name="message" class="form-control" id="create-msg-input" placeholder="Message"></textarea>
                 </div>
                 <button type="submit" class="btn create-submit-btn">Submit</button>
               </form>
