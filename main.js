@@ -25,7 +25,7 @@ $(document).ready(function () {
 
   $(window).resize(function () {
     $('.navbar-mobile').css({ display: 'none' });
-    
+
     // if uncollapsed parent navbar is there then remove
     // otherwise will be present after going from
     // collapsed viewport to non collapsed viewport
@@ -59,4 +59,15 @@ $(document).ready(function () {
   } else {
     $('.navbar-brand').html('DF');
   }
+
+  $('#newsletter-form').submit(function (e) {
+    e.preventDefault();
+    let form = e.target;
+    let http = new XMLHttpRequest();
+    http.open('POST', form.action);
+    http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    let params =
+      'email=' + document.getElementById('input-newsletter-email').value;
+    http.send(params);
+  });
 });
