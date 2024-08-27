@@ -17,6 +17,12 @@ body,
   height: fit-content;
   color: #1a2223;
 }
+.sqs-block-content {
+  height: 100%;
+}
+.body-container {
+  height: 100%;
+}
 h1 {
   font-family: 'Palmore Semibold';
   font-size: 500%;
@@ -313,6 +319,7 @@ input.newsletter-form:focus {
     background-color: #ebefe7;
     display: flex;
     align-items: center;
+    height: 100%;
   }
   h1 {
     font-size: 250%;
