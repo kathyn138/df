@@ -66,6 +66,22 @@ $(document).ready(function () {
     let http = new XMLHttpRequest();
     http.open('POST', form.action);
     http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+    http.onreadystatechange = function () {
+      if (http.readyState === 4 && http.status === 200) {
+        form.reset();
+        let emailInput = form.querySelector('#input-newsletter-email');
+        let label = form.querySelector('.newsletter-form-label');
+        let signUpBtn = form.querySelector('.newsletter-signup-btn');
+
+        emailInput.style.display = 'none';
+        signUpBtn.style.display = 'none';
+        label.style.display = 'none';
+
+        let thankYouMessage = form.querySelector('.newsletter-submission-msg');
+
+        thankYouMessage.style.display = 'block';
+      }
+    };
     let params =
       'email=' + document.getElementById('input-newsletter-email').value;
     http.send(params);
