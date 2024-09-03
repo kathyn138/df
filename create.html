@@ -84,7 +84,7 @@
           <!-- create form -->
           <div class="row create-form-row mx-auto">
             <div class="col create-form-col my-auto">
-              <form class="create-form gform" id="create-form" method="POST" action="https://script.google.com/macros/s/AKfycbyPOCybg_1rKCxj5C9jyrcHnT0VEIeAB-X89NDy2uy8-HledodefkABx9aecfiFQe-R5w/exec">
+              <form class="create-form gform" id="create-form" method="POST" action="https://script.google.com/macros/s/AKfycbzOw3UJrinFQakbU0Se8dPVBnFwXiTSYU5xrMnVMhId3XxjAtA7DcAA1kcJkawgqYbcjQ/exec">
                 <p class="create-submission-msg text-center">Thanks for reaching out! We'll get back to you soon!</p>
                 <div class="mb-5">
                   <input type="text" name="name" class="form-control" id="create-name-input" placeholder="Name">
@@ -139,14 +139,14 @@
 
           <div class="row justify-content-center">
             <div class="col-6 newsletter-container">
-              <form>
+              <form class="gform" id="newsletter-form" method="POST" action="https://script.google.com/macros/s/AKfycbzUx2sZ1gjqcjbASxTGJ3VVbzj6t-S1MgTh7Dsf-fBbJ4op63xWcQdlNFjj_q0PLC0r/exec">
+                <p class="newsletter-submission-msg text-center">Thanks for joining!</p>
                 <div class="mb-5 d-flex">
-                  <input type="email" class="form-control newsletter-form" id="input-newsletter-email"
+                  <input type="email" name="email" class="form-control newsletter-form" id="input-newsletter-email"
                     aria-describedby="input-newsletter-email" placeholder="JOIN THE CULT">
                   <label for="newsletter-email" type="text" class="newsletter-form-label">EMAIL</label>
                   <button type="submit" class="btn newsletter-signup-btn flex-fill">SIGN UP</button>
                 </div>
-
               </form>
             </div>
 
