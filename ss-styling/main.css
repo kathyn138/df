@@ -1,0 +1,37 @@
+/* fonts */
+@font-face {
+  font-family: Palmore;
+  src: url(https://static1.squarespace.com/static/64c2ab8b44c0312560249396/t/666a2f86176c011915b582c7/1718235014797/palmore-webfont.woff2);
+}
+@font-face {
+  font-family: Palmore Semibold;
+  src: url(https://static1.squarespace.com/static/64c2ab8b44c0312560249396/t/666c991694de7d0e08cd1975/1718393110480/palmoresemibold-webfont.woff);
+}
+
+
+/* MAIN STYLING */
+body {
+overflow-x: hidden !important;
+}
+#page {
+padding: 0;
+margin: 0;
+max-width: 100%;
+max-height: 100%;
+}
+.content-wrapper {
+padding: 0 !important;
+}
+h1 {
+font-family: 'Palmore Semibold';
+font-size: 500%;
+letter-spacing: 1.7rem;
+}
+h3 {
+font-family: 'Palmore Semibold';
+font-size: 3.5rem;
+}
+/* h4 is only used for under construction page */
+h4 {
+font-family: 'Palmore Semibold';
+}
