@@ -134,6 +134,7 @@ h2.create-msg {
   }
   .create-form-row {
     position: relative;
+    animation: 4s linear 1s forwards fade-in;
   }
   .create-form-col {
     justify-content: center;
