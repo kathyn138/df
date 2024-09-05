@@ -121,11 +121,12 @@ $(document).ready(function () {
       .addClass('justify-content-center');
   }
 
-  const player = new playerjs.Player(document.getElementById('promo'));
+  const player = new playerjs.Player(document.getElementById('promo-video'));
 
   // always keep video on mute on landing page initially to keep autoplay
   // default is that player will remember unmute state ie blocks autoplay if left unmuted
   player.on('ready', () => {
     player.mute();
+    console.log('here inside')
   });
 });
