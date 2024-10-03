@@ -42,8 +42,26 @@ $(document).ready(function () {
       navBarCollapse();
 
       $('.navbar-brand').html('DEL FICO');
+
+      // switch video player for mobile device
+      // allows volume and play button to appear
+      $('#imagine-you-video').attr(
+        'src',
+        'https://iframe.mediadelivery.net/embed/320142/66482fd5-b6e7-4638-bab3-8ee0083ff9ea?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
+      );
     } else {
       $('.navbar-brand').html('DF');
+    }
+
+    // if not mobile view, use desktop version of video
+    if (
+      $('#imagine-you-video').attr('src') !==
+      'https://iframe.mediadelivery.net/embed/320142/66482fd5-b6e7-4638-bab3-8ee0083ff9ea?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
+    ) {
+      $('#imagine-you-video').attr(
+        'src',
+        'https://iframe.mediadelivery.net/embed/319444/f75b9e2c-af51-468a-b14a-8e21ed74ea0e?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
+      );
     }
   });
 
@@ -56,6 +74,13 @@ $(document).ready(function () {
     navBarCollapse();
 
     $('.navbar-brand').html('DEL FICO');
+
+    // switch video player for mobile device
+    // allows volume and play button to appear
+    $('#imagine-you-video').attr(
+      'src',
+      'https://iframe.mediadelivery.net/embed/320142/66482fd5-b6e7-4638-bab3-8ee0083ff9ea?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
+    );
   } else {
     $('.navbar-brand').html('DF');
   }
@@ -120,5 +145,11 @@ $(document).ready(function () {
       document.getElementById('create-msg-input').value;
 
     http.send(params);
+  });
+
+  const playerLately = new playerjs.Player(document.getElementById('imagine-you-video'));
+  playerLately.on('ready', () => {
+    playerLately.mute();
+    console.log('here inside lately')
   });
 });
