@@ -12,6 +12,21 @@ html, body {
   background-size: 130% auto;
   background-repeat: no-repeat;
 }
+.lately-video-container {
+  position: relative;
+  padding-bottom: 45%;
+  height: 100%;
+  overflow: hidden;
+}
+#imagine-you-video {
+  transform: scale(1.5);
+  position: absolute;
+  top: 20%;
+  left: -6%;
+  width: 110%;
+  height: 100%;
+  border: 0;
+}
 @media screen and (max-width: 1200px) {
   .lately-body {
     background-size: auto 100%;
@@ -30,16 +45,13 @@ html, body {
 
 h2.film-title {
   font-family: 'Palmore';
-  color: #E3DAC9;
-  letter-spacing: 0;
+  color: #1A2223;
   font-size: 10rem;
-  position: absolute;
-  z-index: 1;
   opacity: 0;
   animation: 2s linear 2s forwards fade-in;
 }
 .carousel-row {
-  margin-top: 6.45rem;
+  /* margin-top: 6.45rem; */
   opacity: 0;
   animation: 2s linear 2s forwards fade-in;
 }
@@ -64,6 +76,9 @@ h2.film-title {
   top: -150px;
 }
 
+.lately-details-row {
+  background-color: #1A2223;
+}
 .lately-details-container {
   color: #EBEFE7;
   font-size: 2rem;
@@ -78,6 +93,9 @@ h2.film-title {
 h2 {
   font-family: 'Palmore';
   font-size: 5rem;
+}
+.newsletter-submission-msg {
+  display: none;
 }
 
 
