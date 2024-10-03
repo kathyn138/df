@@ -41,7 +41,7 @@ $(document).ready(function () {
         'https://iframe.mediadelivery.net/embed/261546/dc276456-7fe6-403a-b903-d9044f5355e3?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
       );
     }
-
+    
     // large devices
     if (window.matchMedia('(min-width: 992px)').matches) {
       // DF on top left for desktops
@@ -68,7 +68,7 @@ $(document).ready(function () {
       );
 
       // switch video player for mobile device
-      // allows volume button to appear
+      // allows volume and play button to appear
       $('#promo-video').attr(
         'src',
         'https://iframe.mediadelivery.net/embed/263606/5e2e3857-2aff-4f4e-8689-8ad384b028de?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
@@ -110,7 +110,7 @@ $(document).ready(function () {
     });
 
     // switch video player for mobile device
-    // allows volume button to appear
+    // allows volume and play button to appear
     $('#promo-video').attr(
       'src',
       'https://iframe.mediadelivery.net/embed/263606/5e2e3857-2aff-4f4e-8689-8ad384b028de?autoplay=true&loop=false&muted=true&preload=true&responsive=true'
@@ -121,12 +121,12 @@ $(document).ready(function () {
       .addClass('justify-content-center');
   }
 
-  const player = new playerjs.Player(document.getElementById('promo-video'));
+  const playerHome = new playerjs.Player(document.getElementById('promo-video'));
 
   // always keep video on mute on landing page initially to keep autoplay
   // default is that player will remember unmute state ie blocks autoplay if left unmuted
-  player.on('ready', () => {
-    player.mute();
+  playerHome.on('ready', () => {
+    playerHome.mute();
     console.log('here inside')
   });
 });
