@@ -7,7 +7,6 @@ html, body {
   padding: 0;
 }
 .lately-body {
-  background-image: url('./assets/lately-bg.png');
   background-position: center bottom;
   background-size: 130% auto;
   background-repeat: no-repeat;
