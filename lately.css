@@ -2,6 +2,7 @@ html, body {
   height: 100%;
 }
 .lately-body {
+  background-color: #1A2223;
   height: 90%;
   overflow: hidden;
   padding: 0;
@@ -44,7 +45,7 @@ html, body {
 
 h2.film-title {
   font-family: 'Palmore';
-  color: #1A2223;
+  color: #EBEFE7;
   font-size: 10rem;
   opacity: 0;
   animation: 2s linear 2s forwards fade-in;
