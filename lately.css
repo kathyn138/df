@@ -50,31 +50,6 @@ h2.film-title {
   opacity: 0;
   animation: 2s linear 2s forwards fade-in;
 }
-.carousel-row {
-  /* margin-top: 6.45rem; */
-  opacity: 0;
-  animation: 2s linear 2s forwards fade-in;
-}
-.slideshow {
-  height: 30rem;
-}
-.carousel.slide {
-  height: 100%;
-}
-.carousel-inner {
-  height: 100%;
-}
-.carousel-item {
-  height: 100%;
-}
-.carousel-inner img {
-  position: relative;
-  top: -30px;
-  width: 100%;
-}
-#lately-1, #lately-12 {
-  top: -150px;
-}
 
 .lately-details-row {
   background-color: #1A2223;
@@ -99,79 +74,19 @@ h2 {
 }
 
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-  .carousel-inner img {
-    width: 150%;
-    right: 30%;
-    bottom: 50%;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .carousel-inner img {
-    width: 170%;
-    right: 40%;
-    bottom: 40%;
-  }
-}
+
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  #lately-1 {
-    top: -110px;
-  }
   h2.film-title {
     font-size: 9rem;
     top: 294px;
   }
-  .carousel-inner img {
-    width: 180%;
-    right: 40%;
-    bottom: 20%;
-  }
 }
 @media screen and (max-width: 576px) {
-  .slideshow {
-    height: 100%;
-  }
-  #lately-1, #lately-12  {
-    top: 0px;
-  }
-  #lately-2 {
-    right: 65%;
-  }
-  #lately-3 {
-    right: 10%;
-  }
-  #lately-4 {
-    right: 60%;
-  }
-  #lately-5 {
-    right: 40%;
-  }
-  #lately-7 {
-    right: 100%;
-  }
-  #lately-8 {
-    right: 45%;
-  }
-  #lately-10 {
-    right: 17%;
-  }
-  #lately-12 {
-    right: 45%;
-  }
   h2.film-title {
     font-size: 5rem;
     top: 164px;
     opacity: 1;
     animation: none;
-  }
-  .carousel-row {
-    opacity: 1;
-    animation: none;
-  }
-  .carousel-inner img {
-    width: 200%;
-    right: 70%;
-    bottom: 0%;
   }
   .lately-details-container {
     color: #FFFFFF;
