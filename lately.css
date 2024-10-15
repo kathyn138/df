@@ -92,6 +92,7 @@ h2 {
     color: #FFFFFF;
     opacity: 1;
     animation: none;
+    text-align: center;
   }
   .lately-details-container {
     font-size: 1rem;
