@@ -89,17 +89,19 @@ h2 {
     animation: none;
   }
   .lately-details-container {
+    font-size: 1rem;
     color: #FFFFFF;
     opacity: 1;
     animation: none;
     text-align: center;
+    flex: none;
+    margin: 0 !important;
   }
-  .lately-details-container {
-    font-size: 1rem;
+  .lately-details-container p {
+    margin-top: 16px;
   }
   h2.release-date {
     font-size: 3rem;
-    width: 80%;
     text-align: center;
   }
 }
