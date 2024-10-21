@@ -82,6 +82,19 @@ h2 {
   }
 }
 @media screen and (max-width: 576px) {
+  .lately-video-container {
+    position: relative;
+    padding-bottom: 19%;
+    height: 100%;
+    overflow: hidden;
+  }
+  #imagine-you-video {
+    transform: scale(1.57);
+    position: relative;
+    top: 35px;
+    left: -5%;
+    border: 0;
+  }
   h2.film-title {
     font-size: 5rem;
     top: 164px;
