@@ -97,7 +97,6 @@ h2 {
   }
   h2.film-title {
     font-size: 5rem;
-    top: 164px;
     opacity: 1;
     animation: none;
   }
@@ -116,5 +115,6 @@ h2 {
   h2.release-date {
     font-size: 3rem;
     text-align: center;
+    margin-bottom: 10px;
   }
 }
